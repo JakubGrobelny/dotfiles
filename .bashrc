@@ -123,3 +123,10 @@ alias emacs='emacs --no-window-system --insecure'
 alias remake='make clean; make;'
 alias claer='clear; echo "learn how to type you idiot"'
 alias git-pull-force='git reset --hard origin/master'
+alias cabal='echo "Do not use cabal"'
+eval `opam config env`
+alias stack-create='stack exec --no-ghc-package-path -- cabal init'
+alias python=python3
+
+alias cbuild='mkdir build && cd build && cmake .. && make && cd ..'
+alias cclean='rm -rf -I build'
