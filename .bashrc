@@ -130,3 +130,6 @@ alias python=python3
 
 alias cbuild='mkdir build && cd build && cmake .. && make && cd ..'
 alias cclean='rm -rf -I build'
+
+if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
+echo 'set completion-ignore-case On' >> ~/.inputrc
