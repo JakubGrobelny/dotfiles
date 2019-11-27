@@ -72,8 +72,8 @@ xterm*|rxvt*)
 esac
 
 #from http://bashrcgenerator.com/
-PS1="[\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;226m\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]]\n\[$(tput bold)\]{\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;45m\]\t\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput bold)\]\u}:\[$(tput sgr0)\] \[$(tput sgr0)\]"
-
+# PS1="[\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;226m\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]]\n\[$(tput bold)\]{\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;45m\]\t\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput bold)\]\u}:\[$(tput sgr0)\] \[$(tput sgr0)\]"
+export PS1="[\[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]]\n\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;87m\]λ\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] \u \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;87m\]::\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -133,3 +133,6 @@ alias cclean='rm -rf -I build'
 
 if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
 echo 'set completion-ignore-case On' >> ~/.inputrc
+
+alias clipboard='xclip -sel clip'
+
