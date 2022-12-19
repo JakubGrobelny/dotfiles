@@ -1,5 +1,7 @@
 ﻿---
-AccessModifierOffset: '-2'
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: Never
+AccessModifierOffset: '-4'
 AlignAfterOpenBracket: BlockIndent
 AlignConsecutiveMacros: 'false'
 AlignConsecutiveAssignments: 'false'
@@ -61,7 +63,7 @@ SpaceBeforeAssignmentOperators: 'true'
 SpaceBeforeCpp11BracedList: 'true'
 SpaceBeforeCtorInitializerColon: 'true'
 SpaceBeforeInheritanceColon: 'true'
-SpaceBeforeParens: Always
+SpaceBeforeParens: ControlStatements
 SpaceBeforeRangeBasedForLoopColon: 'true'
 SpaceInEmptyParentheses: 'false'
 SpacesBeforeTrailingComments: '1'
